@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "keithvueportfoliowebsite"
+    bucket = "portfoliowebsiteconfig"
     key    = "dev/terraform.tfstate"
     region = "ap-southeast-1"
   }
