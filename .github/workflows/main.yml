@@ -10,6 +10,7 @@ jobs:
   terraform:
     name:  Terraform
     runs-on: ubuntu-latest
+    environment: deploy  # Environment where secrets are used
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     defaults:
       run:
@@ -79,6 +80,7 @@ jobs:
     needs: terraform
     name:  Deploy webapp
     runs-on: ubuntu-latest
+    environment: deploy  # Environment where secrets are used
 
     steps:
     # Checkout the repository to the GitHub Actions runner
