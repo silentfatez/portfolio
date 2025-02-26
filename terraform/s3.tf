@@ -2,9 +2,10 @@
 # S3 service
 #################################
 
+
 resource "aws_s3_bucket" "website" {
   bucket = "keithvueportfoliowebsite"
-
+  acl    = "public-read"
   # Do not include versioning or any other deprecated settings here
 }
 
