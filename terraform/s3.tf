@@ -3,7 +3,7 @@
 #################################
 
 resource "aws_s3_bucket" "website" {
-  bucket = "keithportfoliowebsite"
+  bucket = "keithvueportfoliowebsite"
 
   # Do not include versioning or any other deprecated settings here
 }

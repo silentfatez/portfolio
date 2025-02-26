@@ -3,11 +3,11 @@
 #################################
 
 locals {
-  s3_origin_id = "keithportfoliowebsite"
+  s3_origin_id = "keithvueportfoliowebsite"
 }
 
 resource "aws_cloudfront_origin_access_identity" "origin_access_identity" {
-  comment = "OAI for keithportfoliowebsite"
+  comment = "OAI for keithvueportfoliowebsite"
 }
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
@@ -22,7 +22,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   enabled             = true
   is_ipv6_enabled     = true
-  comment             = "CloudFront distribution for keithportfoliowebsite"
+  comment             = "CloudFront distribution for keithvueportfoliowebsite"
   default_root_object = "index.html"
 
   default_cache_behavior {
